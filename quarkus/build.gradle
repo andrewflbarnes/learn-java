@@ -1,0 +1,11 @@
+//apply from: "settings.gradle"
+plugins {
+    id "io.quarkus" version "${quarkusVersion}"
+}
+
+dependencies {
+//    implementation platform("io.quarkus:quarkus-bom:${quarkusVersion}")
+    implementation enforcedPlatform("io.quarkus:quarkus-universe-bom:${quarkusVersion}")
+
+    implementation('io.quarkus:quarkus-resteasy')
+}

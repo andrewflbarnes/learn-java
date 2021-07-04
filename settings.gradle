@@ -1,0 +1,9 @@
+pluginManagement {
+    plugins {
+        id "io.quarkus" version "2.0.0-Final"
+    }
+}
+
+rootProject.name = 'learn-java'
+
+include ':quarkus'
