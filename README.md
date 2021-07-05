@@ -22,7 +22,10 @@ the subproject. More complex commands are prefix by the subproject e.g.
 # equivalent to ./gradlew quarkus:build
 make quarkus
 # equivalent to ./gradlew quarkus:testNative -Dquarkus.package.type=native (requires graalvm)
+make quarkus-native-test
 ```
+
+For a list of all recipes use `make help`.
 
 More information on each project can be found in the corresponding readmes below
 
