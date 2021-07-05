@@ -1,0 +1,20 @@
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'maven-publish'
+}
+
+compileJava {
+    options.release = 11
+}
+
+dependencies {
+    testCompileOnly group: 'junit', name: 'junit', version: '4.12'
+    testImplementation "org.junit.vintage:junit-vintage-engine"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+tasks.named("test") {
+    useJUnitPlatform()
+}

@@ -1,24 +1,4 @@
-group 'net.aflb.learn.java'
-version '0.0.1-SNAPSHOT'
-
 subprojects {
-    apply plugin: 'groovy'
-    apply plugin: 'java'
-
-    compileJava {
-        options.release = 11
-    }
-
-    dependencies {
-//        compile 'org.codehaus.groovy:groovy-all:2.3.11'
-        testCompileOnly group: 'junit', name: 'junit', version: '4.12'
-        testImplementation "org.junit.vintage:junit-vintage-engine"
-        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-    }
-
-    test {
-        useJUnitPlatform()
-    }
-
+    group 'net.aflb.learn.java'
+    version '0.0.1-SNAPSHOT'
 }
